@@ -1,0 +1,67 @@
+/* Controles de Acessibilidade */
+.accessibility-controls {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.accessibility-controls button {
+    background: var(--earth-brown);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.accessibility-controls button:hover {
+    background: var(--accent-green);
+}
+
+/* Seção de Recursos */
+.resources-section { padding: 5rem 5%; background: var(--white); }
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.resource-card {
+    background: var(--light-gray);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.resource-card img, .video-container {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.resource-info { padding: 1.5rem; }
+.resource-info span { 
+    color: var(--accent-green); 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    font-size: 0.8rem; 
+}
+.resource-info h3 { margin: 0.5rem 0; color: var(--primary-green); }
+.resource-info a { 
+    display: inline-block; 
+    margin-top: 1rem; 
+    color: var(--earth-brown); 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
+/* Responsividade para o Iframe */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
